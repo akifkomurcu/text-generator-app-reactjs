@@ -1,3 +1,62 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.Header {
+  width: 100%;
+  height: 150px;
+}
+.HeaderText {
+  width: 550px;
+  padding-top: 60px;
+  margin: 0 auto;
+  font-size: 30px;
+}
+.FormArea {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.InputArea {
+  width: 250px;
+  height: 35px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.DropdownArea {
+  width: 250px;
+  height: 35px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.Dropdown {
+  width: 250px;
+  height: 38px;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+}
+.Input {
+  width: 250px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+}
+Input:focus {
+  outline: none;
+}
+.data {
+}
+.DataArea {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+.owner {
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
 }

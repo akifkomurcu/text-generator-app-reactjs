@@ -4,17 +4,25 @@ import Form from "./Form";
 import Header from "./Header";
 import { useState } from "react";
 function Index() {
-  const [paras, setParas] = useState(1);
+  const [paras, setParas] = useState(4);
+  const [text, setText] = useState("text");
 
   const handleChange = (e) => {
     setParas(e.target.value);
-    console.log(paras);
+  };
+  const DropDownChange = (e) => {
+    setText(e.target.value);
   };
   return (
     <div>
       <Header />
-      <Form paras={paras} handleChange={handleChange} />
-      <Content paras={paras} />
+      <Form
+        paras={paras}
+        text={text}
+        handleChange={handleChange}
+        DropDownChange={DropDownChange}
+      />
+      <Content paras={paras} text={text} />
     </div>
   );
 }
